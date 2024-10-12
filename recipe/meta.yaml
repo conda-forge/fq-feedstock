@@ -1,5 +1,5 @@
 {% set name = "fq" %}
-{% set version = "0.11.0" %}
+{% set version = "0.13.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/wader/fq/archive/v{{ version }}.tar.gz
-  sha256: 8b3a7d112323a11be5559959ff141f0ef9fca2b29f7cc34f060d5f360187dcde
+  sha256: 8bc984b8d989920f8a1cc659b6c3e90eff09b1756cd347252baf3e79cecedd0f
 
 build:
   number: 0
