@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 0.15.1
+  version: "0.16.0"
 
 package:
   name: fq
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://github.com/wader/fq/archive/v${{ version }}.tar.gz
-  sha256: 9f668394c33f3effd02b7d7a145f1087ce784e01d3d0c6e6ba41a899d5e349a7
+  sha256: c0bfc8caa6ecb0ca558a803d704316b1cdde18fda96e77836c0d95c2bcdb2ee6
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
