@@ -33,5 +33,7 @@ about:
   repository: https://github.com/wader/fq
 
 extra:
+  feedstock_name:
+    - fq
   recipe-maintainers:
     - danielnachun
