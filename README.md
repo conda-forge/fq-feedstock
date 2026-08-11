@@ -1,5 +1,5 @@
-About fq-feedstock
-==================
+About go-fq-feedstock
+=====================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fq-feedstock/blob/main/LICENSE.txt)
 
@@ -15,7 +15,14 @@ Current build status
 ====================
 
 
-<table>
+<table><tr>
+    <td>GitHub Actions</td>
+    <td>
+      <a href="https://github.com/conda-forge/fq-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/fq-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
+      </a>
+    </td>
+  </tr>
     
   <tr>
     <td>Azure</td>
@@ -29,13 +36,6 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=23639&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fq-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>linux_aarch64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=23639&branchName=main">
@@ -56,20 +56,6 @@ Current build status
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fq-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_" alt="variant">
                 </a>
               </td>
-            </tr><tr>
-              <td>osx_arm64</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=23639&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fq-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=23639&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fq-feedstock?branchName=main&jobName=win&configuration=win%20win_64_" alt="variant">
-                </a>
-              </td>
             </tr>
           </tbody>
         </table>
@@ -83,54 +69,98 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-fq-green.svg)](https://anaconda.org/conda-forge/fq) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/fq.svg)](https://anaconda.org/conda-forge/fq) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/fq.svg)](https://anaconda.org/conda-forge/fq) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/fq.svg)](https://anaconda.org/conda-forge/fq) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-go--fq-green.svg)](https://anaconda.org/conda-forge/go-fq) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/go-fq.svg)](https://anaconda.org/conda-forge/go-fq) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/go-fq.svg)](https://anaconda.org/conda-forge/go-fq) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/go-fq.svg)](https://anaconda.org/conda-forge/go-fq) |
 
-Installing fq
-=============
+Installing go-fq
+================
 
-Installing `fq` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `go-fq` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `fq` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
-conda install fq
+conda install go-fq
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
-mamba install fq
+mamba install go-fq
 ```
 
-It is possible to list all of the versions of `fq` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
 
 ```
-conda search fq --channel conda-forge
+# for adding to your local project
+pixi add go-fq
+# for installing globally
+pixi global install go-fq
 ```
 
-or with `mamba`:
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `go-fq` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
-mamba search fq --channel conda-forge
+conda search go-fq --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With mamba</summary>
+
+```
+mamba search go-fq --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search go-fq --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search fq --channel conda-forge
+mamba repoquery search go-fq --channel conda-forge
 
-# List packages depending on `fq`:
-mamba repoquery whoneeds fq --channel conda-forge
+# List packages depending on `go-fq`:
+mamba repoquery whoneeds go-fq --channel conda-forge
 
-# List dependencies of `fq`:
-mamba repoquery depends fq --channel conda-forge
+# List dependencies of `go-fq`:
+mamba repoquery depends go-fq --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
@@ -174,17 +204,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating fq-feedstock
-=====================
+Updating go-fq-feedstock
+========================
 
-If you would like to improve the fq recipe or build a new
+If you would like to improve the go-fq recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/fq-feedstock are
+Note that all branches in the conda-forge/go-fq-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks, and branches in the main repository should only be used to
 build distinct package versions.
