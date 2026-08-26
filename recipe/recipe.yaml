@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.17.0"
+  version: "0.18.0"
 
 package:
   name: go-fq
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/wader/fq/archive/v${{ version }}.tar.gz
-  sha256: c5658b2bc635a1d344c64e37d7311157f0fc4b20cc3cfa4d09bdd2f023692d57
+  sha256: 2580de6fb21281a262f99f24d585a925cef71f158c2b24a34125e1b29bc612ef
 
 build:
   number: 0
